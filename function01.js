@@ -212,6 +212,3 @@ var helloWorld = function () {
       return 'Hello world!';
    };
 };
-
-
-// parei no minuto 12 do vídeo
