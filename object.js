@@ -111,6 +111,21 @@ pessoa['cor dos olhos']; // isso funciona
 // supondo que por algum motivo queira excluir a propriedade
 // o comando é o seguinte: delete objeto.propriedade
 
+// esse laço imprime o objeto e suas propriedades
 for (var propriedade in pessoa){
    console.log(propriedade + ' ' + pessoa[propriedade])
 }
+
+// vamos excluir o telefone da pessoa
+delete pessoa.telefone;
+
+// pronto,
+// se chamarmos a pessoa não vai mais exibir o telefone
+
+
+// existe uma outra forma de criar objetos
+// através do new Object();
+// mas vamos tratar disso mais pra frente
+// quando falarmos de funções construtoras
+// um exemplo seria
+// var pessoa = new Object();
