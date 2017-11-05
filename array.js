@@ -120,7 +120,8 @@ carros.push('Onix');
 5 // ele retorna o número de elementos atualizado
 
 carros; // [ 'Ka', 'Gol', 'March', 'Mobi', 'Sonic' ]
-
+// push não gera um novo array
+// modifica o original
 
 // remover um elemento no final do array
 // isso é feito com o pop();
@@ -128,6 +129,8 @@ carros; // [ 'Ka', 'Gol', 'March', 'Mobi', 'Sonic' ]
 carros.pop();
 'Sonic' // ele retorna o elemento excluído
 carros; // [ 'Ka', 'Gol', 'March', 'Mobi' ]
+// pop não gera um novo array
+// modifica o original
 
 
 // inserir um novo elemento no início do array
@@ -137,12 +140,17 @@ carros.unshift('Fiesta');
 5 // ele retorna o número de elementos atualizado
 
 carros; // [ 'Fiesta', 'Ka', 'Gol', 'March', 'Mobi' ]
+// unshift não gera um novo array
+// modifica o original
+
 
 // remover o primeiro elemento do array
 // isso é feito com o shift
 
 carros.shift();
 'Fiesta' // ele retorna o elemento retirado
+// shift não gera um novo array
+// modifica o original
 
 
 // localizando elementos com indexOf()
@@ -229,8 +237,5 @@ for(var i = 0; i < carros.length; i++){
    console.log(carros[i]);
 }
 
-
-
-
-
-.
+// splice não gera um novo array
+// modifica o original
