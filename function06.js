@@ -118,10 +118,12 @@ console.log(counter.add());
 4
 */
 
-// Parei no minuto 5 do vídeo
-// pois tive que almoçar
-
-
+// só que aui nos esbarramos no seguinte:
+// JS não tem modificadores de acesso,
+// igual as outras linguagens tem private, protected
+// então é possível acessar as propriedades do objeto
+// vamos resolver esse problema no outro arquivo
+// function07.js
 
 
 
