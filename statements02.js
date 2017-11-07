@@ -109,12 +109,51 @@ var toHackerCase = function (text) {
 };
 
 
+// blz até aqui deu certo
+
+// agora vamos substituir o for por while
+// simples
+
+var toHackerCase = function (text) {
+   var arrayHacker = [];
+
+   var i = 0; // a inicialização vem pra fora
+   while(i < texto.length ){ // dentro do parênteses fica a condição avaliada
+      // e o incremento vai lá pra baixo
+      switch (texto.charAt(i)) {
+         case 'o':
+            arrayHacker.push(0);
+            break;
+         case 'l':
+            arrayHacker.push(1);
+            break;
+         case 'e':
+            arrayHacker.push(3);
+            break;
+         case 'a':
+            arrayHacker.push(4);
+            break;
+         case 's':
+            arrayHacker.push(5);
+            break;
+         case 't':
+            arrayHacker.push(7);
+            break;
+         default:
+            arrayHacker.push(texto.charAt(i));
+
+      }
+      i++; // aqui fica o oncremento
+   }
+   return arrayHacker.join('');
+};
+
+
 console.log(toHackerCase(texto));
 
-
-
-// blz até aqui deu certo
-// parei no minuto 9 do vídeo
+// o while é uma opção ao for
+// permite fazer o controle do incremento
+// de uma forma mais explícita
 
 
 
